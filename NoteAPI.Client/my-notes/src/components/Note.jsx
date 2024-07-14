@@ -8,18 +8,18 @@ import {
   Text,
 } from "@chakra-ui/react";
 
-export default function Note() {
+export default function Note({ title, description, createdAt }) {
   return (
     <Card variant={"filled"}>
       <CardHeader>
-        <Heading size={"md"}>Заметка</Heading>
+        <Heading size={"md"}>{title}</Heading>
       </CardHeader>
       <Divider borderColor={"gray"} />
       <CardBody>
-        <Text>Текст заметки</Text>
+        <Text>{description}</Text>
       </CardBody>
       <Divider borderColor={"gray"} />
-      <CardFooter>Дата создания</CardFooter>
+      <CardFooter>{createdAt}</CardFooter>
     </Card>
   );
 }
