@@ -51,7 +51,7 @@ export default function App() {
               fontWeight: "bold",
             }}
           >
-            Заметки пуст
+            No data found
           </p>
         )}
       </ul>
